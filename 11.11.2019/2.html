@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шахматная доска вар1</title>
+    <style>
+    body{
+        margin:0;
+    }
+    .odd{
+        height: 12.5vmin;
+        width: 100vmin;
+        background: linear-gradient(to right,
+        black 0, black 12.5%, white 12.5%, white 25%,
+        black 25%, black 37.5%, white 37.5%, white 50%,
+        black 50%, black 62.5%, white 62.5%, white 75%,
+        black 75%, black 87.5%, white 87.5%, white 100% );
+
+    }
+    .even{
+        height: 12.5vmin;
+        width: 100vmin;
+        background: linear-gradient(to left,
+        black 0, black 12.5%, white 12.5%, white 25%,
+        black 25%, black 37.5%, white 37.5%, white 50%,
+        black 50%, black 62.5%, white 62.5%, white 75%,
+        black 75%, black 87.5%, white 87.5%, white 100% );
+    }
+    </style>
+</head>
+<body>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+</body>
+</html>
