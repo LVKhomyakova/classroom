@@ -1,0 +1,42 @@
+body, ul{
+    margin: 0;
+}
+body>*{
+    min-width: 150px;
+    min-height: 100px;
+}
+header{
+    background-color: coral;
+}
+header>div{
+    float: left;
+    height: 50px;
+}
+.menu{
+    clear: both;
+}
+.menu>ul>li{
+    float: left;
+    margin: 0 5px;
+    list-style: none;
+}
+.left{
+    float: left;
+    width: calc(100% / 3);
+    background-color: orange;
+}
+.center{
+    float: left;
+    height:200px;
+    width: calc(100% / 3);
+    background-color: lightblue;
+}
+.right{
+    float: left;
+    width: calc(100% / 3);
+    background-color: pink;
+}
+footer{
+    clear: both;
+    background-color: green;
+}
