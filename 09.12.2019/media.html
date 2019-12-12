@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            transition: 2s;
+        }
+        @media screen and (max-width: 400px) {
+            div {
+                width: 0;
+                height: 0;
+                border: 100px solid white;
+                border-width: 1px 50px 100px 50px;
+                border-bottom-color: brown;
+            }
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 799px) {
+            div {
+                border-radius: 0%;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            div {
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

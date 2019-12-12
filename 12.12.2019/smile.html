@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .krug{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 10px solid brown;
+            border-radius: 50%;
+            transition: 3s;
+            top:50px;
+            left: 50px;
+            box-shadow: 0 0 100px  rgba(165,42,42,0) ;
+        }
+        .oreol{
+            display: block;
+            content: "";
+            width: 340px;
+            height: 340px;
+            border: 10px solid brown;
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            opacity: 0;
+            box-shadow: 0 0 100px  rgba(165,42,42,0) ;
+            transition: 2s;
+        }
+        .oreol:hover{
+            box-shadow: 0 0 100px  rgba(165,42,42,1) ;
+            opacity: .5;
+            transform: scale(1.2);
+        }
+
+        .krug:hover{
+            transform: rotate(360deg);
+            box-shadow: 0 0 100px  rgba(165,42,42,1) ;
+        }
+        .duga-left{
+            display: block;
+            content: "";
+            width: 50px;
+            height: 50px;
+            border: 10px solid brown;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 70px;
+            left: 50px;
+        }
+        .duga-left::before{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            left: -1px;
+            top: -1px;
+        }
+
+        .duga-left::after{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            top: 41px;
+            left: 42px;
+        }
+
+        .duga-right{
+            display: block;
+            content: "";
+            width: 50px;
+            height:50px;
+            border: 10px solid brown;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 70px;
+            left: 180px;
+        }
+        .duga-right::before{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            left: -1px;
+            top: -1px;
+        }
+        .duga-right::after{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            top: 41px;
+            left: 42px;
+        }
+        .duga{
+            display: block;
+            content: "";
+            width: 180px;
+            height: 180px;
+            border: 10px solid brown;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-radius: 50%;
+            transform: rotate(-225deg);
+            position: absolute;
+            top: 60px;
+            left: 50px;
+        }
+        .duga::before{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            left: 152px;
+            top: 152px;
+        }
+        .duga::after{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: brown;
+            position: absolute;
+            top: 19px;
+            left: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="krug">
+            <div class="oreol"></div>
+        <div class="duga-left"></div>
+        <div class="duga-right"></div>
+        <div class="duga"></div>
+    </div>
+</body>
+</html>
