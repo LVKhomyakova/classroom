@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .krug{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 3px solid green;
+            border-radius: 50%;
+            top: 20px;
+            left: 20px;
+        }
+        .strelka::before{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: 95px;
+            left: -3px;
+        }
+        .num{
+            overflow: hidden;;
+            width: 80px;
+            height: 40px;
+            border: 3px solid green;
+            position: relative;
+            top:50px;
+            left: 80px;
+        }
+        .strelka{
+            height: 100px;
+            width: 3px;
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            transform-origin: 0px 100px 0;
+            animation: tic 60s steps(360) infinite;
+        }
+
+        @keyframes tic {
+            from {transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        .zero{
+            position: absolute;
+            top: 5px;
+            left: 120px;
+        }
+        .des, .ed{
+            float: left;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+        @keyframes des {
+            from {transform: translateY(0px);}
+            to{transform: translateY(-240px);}
+        }
+        @keyframes ed {
+            from {transform: translateY(0px);}
+            to{transform: translateY(-400px);}
+        }
+        .ed{
+            animation: ed 10s steps(10) infinite;
+        }
+        .des{
+            animation: des 60s steps(6) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="zero">0</div>
+    <div class="krug">
+        <div class="strelka"></div>
+    </div>
+    <div class="num">
+        <div class="des">
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="ed">
+            <div>0</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </div>
+</body>
+</html>

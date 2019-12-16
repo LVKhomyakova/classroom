@@ -1,0 +1,46 @@
+aside {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: -100vw;
+    top: 0;
+  }
+  main {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow-y: auto;
+  }
+  #asideMenu:checked~.mainDiv{
+    transform: translateX(100vw);
+  }
+  .mainDiv {
+    transition: 1s;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+  /**/
+  input{
+      display: none;
+  }
+  #asideMenu:checked~div>label>:nth-child(1),
+  #asideMenu:not(:checked)~div>label>:nth-child(2)
+    {
+      display: none;
+  }
+@media screen and (min-width:650px){
+    label{
+        display: none;
+    }
+    aside{
+        width: 200px;
+        left: 0;
+    }
+    main{
+        width: calc(100vw - 200px);
+        left: 200px;
+    }
+}
