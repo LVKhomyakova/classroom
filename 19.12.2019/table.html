@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        tbody>tr:nth-child(odd)>td:first-child{
+            color: red;
+        }
+        table{
+            background-color: #ffd;
+        }
+        tbody>tr:nth-child(odd){
+            background-color:#ddd;
+        }
+        tbody>tr>td:nth-child(n):hover{
+            background-color:#000;
+            color: #fff;
+        }
+    
+    </style>
+</head>
+<body>
+    <table cellspacing="0" cellpadding="20">
+        <caption>Табличка</caption>
+        <thead>
+            <tr>
+                <th>N</th>
+                <th>Фамилия</th>
+                <th>Оценка</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Иванов</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Петров</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Сидоров</td>
+                <td>н</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Абрамович</td>
+                <td>сколько надо</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <td colspan="2">Средний балл</td>
+                <td>4</td>
+            </tr>
+        </tfoot> -->
+    </table>
+</body>
+</html>
